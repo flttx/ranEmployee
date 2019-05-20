@@ -1,0 +1,149 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%ht60{
+	height: 60upx;
+	line-height: 60upx;
+}
+
+%ht40{
+	height: 40upx;
+	line-height: 40upx;
+}
+
+.content{
+	height: calc(100% - 50upx);
+	padding-top: 40upx;
+	
+	.form{
+		width: 80%;
+		margin: 0 10% 40upx;
+		height: calc(100% - 40upx);
+		position: relative;
+	}
+}
+
+.box{
+	border: 2upx solid #333;
+	border-radius: 12upx;
+	padding: 20upx;
+	position: relative;
+	
+	.car-title{
+		@extend %ht60;
+		font-size: 32upx;
+		
+		.coupon{
+			float: right;
+		}
+	}
+	
+	.car-no{
+		@extend %ht80;
+		text-align: center;
+		font-size: 56upx;
+	}
+	
+	.member-info{
+		display: block;
+		text-align: right;
+		@extend %ht40;
+		font-size: 28upx;
+	}
+		
+}
+
+.row{
+	margin-top: 20upx;
+	box-sizing: border-box;
+	@extend %ht80;
+	padding-left: 20upx;
+	padding-right: 40upx;
+	border: 2upx solid #333;
+	border-radius: 12upx;
+	
+	.label{
+		color: #999;
+	}
+	
+	input{
+		float: right;
+		width: calc(100% - 200upx);
+		@extend %ht80;
+	    border: none;
+	    background: transparent;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	
+	input.long{
+		width: calc(100% - 120upx);
+	}
+}
+
+.phone{
+	float: left;
+	width: 70%;
+}
+
+.other-phone{
+	margin-top: 20upx;
+	float: right;
+	width: calc(30% - 20upx);
+	background: #000;
+	border-radius: 12upx;
+	color: #fff;
+	@extend %ht80;
+	text-align: center;
+	font-size: 32upx;
+}
+
+.car-type{
+	display: flex;
+	height: 80upx;
+	margin-top: 20upx;
+	
+	radio-group{
+		.radio{
+			width: 140upx;
+			margin: 0 calc((100% - 420upx)/6);
+		}
+	}
+}
+
+.textarea-box{
+	height: 200upx;
+	border: 2upx solid #333;
+	border-radius: 12upx;
+	
+	label{
+		float: left;
+		width: 140upx;
+		height: 200upx;
+		line-height: 200upx;
+		color: #999;
+		padding-left: 20upx;
+	}
+	
+	textarea{
+		float: left;
+		width: calc(100% - 180upx);
+		height: 90%;
+		padding: 10upx;
+		border: none;
+		background: transparent;
+		margin-bottom: 0;
+		overflow-x: hidden;
+	}
+}
+
+
+.consumeRecord{
+	float: right;
+	margin-top: 20upx;
+	height: 40upx;
+	line-height: 40upx;
+	border-bottom: 2upx solid;
+}

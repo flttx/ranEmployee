@@ -1,0 +1,35 @@
+
+*{
+	box-sizing: border-box;
+}
+
+.content{
+	padding: 0 40upx;
+}
+
+.list{
+	height: 100%;
+	
+	.li{
+		padding: 40upx 0;
+		border-bottom: 2upx solid #999;
+		position: relative;
+		font-size: 32upx;
+		
+		view{
+			height: 40upx;
+			line-height: 40upx;
+		}
+		
+		.date{
+			color: #999;
+			font-size: 28upx;
+		}
+		
+		.money{
+			position: absolute;
+			right: 0;
+			top: calc(50% - 30upx);
+		}
+	}
+}

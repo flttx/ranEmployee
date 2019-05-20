@@ -1,0 +1,71 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+.content{
+	height: calc(100% - 40upx);
+	padding-top: 40upx;
+}
+
+.search{
+	width: 80%;
+	margin: 0 10%;
+	height: 80upx;
+	border: 2upx solid #333;
+	border-radius: 60upx;
+	.uni-icon-search{
+		float: left;
+		font-size: 48upx;
+		@extend %ht80;
+		margin-left: 10upx;
+	}
+	input{
+		float: left;
+		width: calc(100% - 70upx);
+		@extend %ht80;
+		padding-left: 10upx;
+	}
+}
+
+.scroll-wrapper{
+	margin-bottom: 20upx;
+	.memberList{
+		width: 80%;
+		margin: 0 10% 10px 10%;
+		margin-bottom: 20px;
+		
+		.li{
+			padding: 40upx 0;
+			border-bottom: 2upx solid #333;
+			
+			>text{
+				display: block;
+			}
+			
+			.member-info{
+				margin-bottom: 20upx;
+				
+				.member-name{
+					font-size: 40upx;
+				}
+				
+				.member-phone{
+					font-size: 28upx;
+					color: #999;
+				}
+			}
+			
+			.card-info{
+				font-size: 28upx;
+				color: #999;
+				
+				.member-level{
+					float: right;
+				}
+			}
+			
+			
+		}
+	}
+}

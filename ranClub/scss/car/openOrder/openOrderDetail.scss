@@ -1,0 +1,514 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%ht60{
+	height: 60upx;
+	line-height: 60upx;
+}
+
+%ht40{
+	height: 40upx;
+	line-height: 40upx;
+}
+
+%ft28 {
+	font-size: 28upx;
+}
+
+.content{
+	height: 100%;
+	
+	.header{
+		text-align: center;
+		@extend %ht80;
+		margin-top: 20upx;
+	}
+}
+
+.order-info, .settlement-info{
+	width: 84%;
+	margin: 20upx 8%;
+}
+
+.box-title{
+	@extend %ht40;
+	font-size: 32upx;
+	margin-bottom: 10upx;
+	margin-top: 40upx;
+	
+	text{
+		float: right;
+		width: 40upx;
+		height: 40upx;
+	}
+	
+	text.btn{
+		float: right;
+		width: 160upx;
+		height: 40upx;
+		margin-right: 20upx;
+		font-size: 24upx;
+		border: 2upx solid;
+		border-radius: 12upx;
+		text-align: center;
+		line-height: 40upx;
+	}
+}
+
+.box{
+	border: 2upx solid #333;
+	border-radius: 12upx;
+	padding: 20upx;
+	position: relative;
+	
+	.car-title{
+		@extend %ht60;
+		font-size: 32upx;
+		
+		.coupon{
+			float: right;
+		}
+	}
+	
+	.car-no{
+		@extend %ht80;
+		text-align: center;
+		font-size: 56upx;
+	}
+	
+	.member-info{
+		display: block;
+		text-align: right;
+		@extend %ht40;
+		font-size: 28upx;
+	}
+	
+	.car-info{
+		margin:0 40upx;
+		
+		.car-info-line{
+			@extend %ht60;
+			display: flex;
+			margin-bottom: 40upx;
+			
+			.car-info-item{
+				flex: 1;
+				font-size: 28upx;
+				
+				image{
+					width: 40upx;
+					height: 40upx;
+					vertical-align: top;
+					margin-top: 8upx;
+				}
+				
+				.car-color{
+					padding: 4upx 60upx;
+					background: #000;
+				}
+			}
+		}
+		
+		.remark{
+			font-size: 28upx;
+			margin-bottom: 20upx;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.car-info{
+		margin:0 20upx;
+	}
+	
+	.car-color{
+		padding: 4upx 40upx;
+	}
+}
+
+
+.grey{
+	color: #999;
+}
+
+.red{
+	color: red;
+}
+
+.line-through{
+	text-decoration: line-through;
+}
+
+.changeMember text{
+	font-size: 28upx;
+	float: right;
+	@extend %ht60;
+	text-decoration: underline;
+}
+
+
+.menu-box{
+	width: 80%;
+	margin: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20upx;
+	margin-bottom: 20upx;
+}
+
+.menu-box text, .btn-box text{
+	width: 40%;
+	@extend %ht80;
+	text-align: center;
+	border: 2upx solid #333;
+	border-radius: 12upx;
+}
+
+.pay-money{
+	text-align: right;
+	height: 40upx;
+}
+
+.btn-box{
+	// display: flex;
+	// justify-content: space-between;
+	height: 80upx;
+	margin-top: 40upx !important; 
+	margin-bottom: 40upx !important; 
+	
+	button{
+		width: 45%;
+	}
+}
+
+.mask{
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+.settlement-box{
+	position: fixed;
+	width: 80%;
+	border: 2upx solid;
+	top: 10%;
+	left: 10%;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 40upx;
+	font-size: 28upx;
+	z-index: 3;
+	
+	checkbox-group{
+		width: 80%;
+		margin: 20upx 10%;
+		
+		.checkbox-item{
+			display: block;
+			height: 100upx;
+			
+			.input-box{
+				float: right;
+				width: calc(100% - 180upx);
+				height: 40upx;
+				
+				input{
+					float: left;
+					width: calc(100% - 40upx);
+					@extend %ht40;
+					border-bottom: 2upx solid;
+				}
+				
+				text{
+					float: left;
+				}
+			}
+			
+			.balance{
+				float: left;
+				height: 40upx;
+				padding-left: 40upx;
+			}
+		}
+	}
+	
+	.settlement-btn-box{
+		height: 80upx;
+		display: flex;
+		justify-content: space-between;
+		
+		button{
+			width: 200upx;
+			@extend %ht80;
+			border: 2upx solid #333;
+			border-radius: 12upx;
+		}
+	}
+}
+
+.discount-box{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	padding: 20upx 40upx 0 40upx;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 3;
+	font-size: 32upx;
+	
+	.close{
+		float: right;
+	}
+	
+	
+	.tabs{
+		margin: 20upx 0;
+		display:  flex;
+		height: 40upx;
+		
+		.tab-item{
+			flex: 1;
+			height: 60upx;
+			text-align: center;
+			position: relative;
+			.bar{
+				width: 100upx;
+				height: 2upx;
+				background: #666;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+	
+			
+	swiper{
+		height: calc(100% - 130upx);
+	}
+}
+
+
+.coupon-box{
+	height: 160upx;
+	border: 2upx solid;
+	margin-top: 20upx;
+	
+	.price{
+		float: left;
+		width: 200upx;
+		height: 160upx;
+		line-height: 140upx;
+		text-align: center;
+		
+		text{
+			font-size: 60upx;
+			margin-right: 4upx;
+		}
+	}
+			
+	.coupon-info{
+		float: left;
+		width: calc(100% - 200upx);
+		height: 100%;
+		padding: 10upx;
+		box-sizing: border-box;
+		
+		.coupon-name{
+			height: 60upx;
+			line-height: 60upx;
+		}
+		
+		.coupon-desc, .coupon-date{
+			height: 40upx;
+			line-height: 40upx;
+			color: #999;
+			font-size: 28upx;
+		}
+	}
+}
+
+.service-item{
+	position: relative;
+	padding: 20upx 0;
+	
+	.service-item-name{
+		font-size: 32upx;
+		line-height: 1.4
+	}
+	
+	text{
+		display: block;
+		@extend %ft28;
+		line-height: 1.4;
+	}
+}
+
+
+.service-item:not(:first-child){
+	border-top: 2upx solid #666;
+}
+
+.service-item-price{
+	position: absolute;
+	right: 80upx;
+	top: calc(50% - 40upx);
+	
+	text{
+		font-size: 32upx;
+		display: block;
+		line-height: 44upx;
+	}
+}
+
+.service-item-price.min{
+	top: calc(50% - 20upx);
+}
+
+.delete-icon{
+	position: absolute;
+	right: 0;
+	width: 40upx;
+	height: 40upx;
+	top: calc(50% - 20upx);
+}
+
+.product-item{
+	position: relative;
+	
+	.product-info{
+		width: 50%;
+		padding: 10upx;
+		
+		text{
+			display: block;
+			line-height: 1.4;
+		}
+		
+		.desc{
+			@extend %ft28;
+			line-height: 1.4;
+		}
+		
+	}
+	
+	.product-num{
+		position: absolute;
+		top: calc(50% - 24upx);
+		left: 50%;
+		color: #999;
+	}
+		
+}
+
+.product-item:not(:first-child){
+	border-top: 2upx solid #666;
+}
+
+
+.edit-box{
+	width: 80%;
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	z-index: 3;
+	background: #fff;
+	border: 1px solid;
+	padding: 40upx 80upx;
+	box-sizing: border-box;
+	
+	
+	p{
+		@extend %ht80;
+		text-align: center;
+		font-size: 32upx;
+	}
+	
+	.name{
+		@extend %ht80;
+		
+		.status-btn{
+			float: right;
+			width: 120upx;
+			@extend %ht80;
+			border: 2upx solid #333;
+			border-radius: 12upx;
+			text-align: center;
+		}
+		
+		.operation-box{
+			float: right;
+			width: 240upx;
+			@extend %ht80;
+			.uni-icon-minus{
+				float: left;
+				font-size: 40upx;
+				margin-top: 20upx;
+			}
+			.uni-icon-plus{
+				float: right;
+				font-size: 40upx;
+				margin-top: 20upx;
+			}
+			.operation-num{
+				display: inline-block;
+				width: 120upx;
+				@extend %ht60;
+				margin-top: 10upx;
+				margin-left: 20upx;
+				border: 2upx solid;
+				border-radius: 12upx;
+				text-align: center;
+			}
+		}
+	}
+	
+	input{
+		width: calc(100% - 20upx);
+		@extend %ht80;
+		border: 2upx solid #999;
+		border-radius: 12upx;
+		padding: 0 10upx;
+		margin-top: 20upx;
+	}
+	
+	textarea{
+		width: calc(100% - 20upx);
+		height: 160upx;
+		line-height: 40upx;
+		border: 2upx solid #999;
+		border-radius: 12upx;
+		padding: 0 10upx;
+		margin-top: 20upx;
+	}
+	
+	.setting{
+		@extend %ht80;
+		color: #999;
+		text-align: right;
+	}
+	
+	.edit-btn-box{
+		@extend %ht80;
+		display: flex;
+		justify-content: center;
+		
+		button{
+			width: 60%;
+			@extend %ht80;
+			border: 2upx solid;
+			border-radius: 12upx;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.content{
+	padding: 0 40upx;
+	font-size: 28upx;
+	.messageList{
+		margin: 0 0 140upx;
+		padding: 0 40upx;
+		width: calc(100% - 80upx);
+		.message-item{
+			margin-top: 40upx;
+			.message-time{
+				height: 40upx;
+				line-height: 40upx;
+				text-align: center;
+			}
+			.message-content{
+				border: 1px solid #333;
+				border-radius: 12upx;
+				padding: 10upx 20upx;
+			}
+		}
+		
+	}
+}
+

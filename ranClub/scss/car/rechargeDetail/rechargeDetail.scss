@@ -1,0 +1,230 @@
+%border-radius {
+	border-radius: 12upx;
+}
+
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+
+.form{
+	width: 80%;
+	margin: 20upx 10%;
+} 
+
+.input-row{
+	margin-top: 40upx;
+	border: 2upx solid;
+	height: 80upx;
+	@extend %border-radius;
+	label{
+		float: left;
+		width: 140upx;
+		@extend %ht80;
+		padding-right: 0;
+		padding-left: 20upx;
+	}
+	input{
+		float: left;
+		width:calc(100% - 180upx);
+		@extend %ht80;
+		padding-right: 20upx;
+	}
+}
+
+.memberLevel{
+	width: 360upx !important;
+	display: inline-block;
+}
+
+.balance{
+	float: right;
+	margin-top: 40upx;
+	width: calc(100% - 390upx);
+	@extend %ht80;
+	padding-left: 20upx;
+	font-size: 28upx;
+	color: #999;
+}
+
+@media screen and (max-width: 320px) {
+	.memberLevel{
+		width: 65% !important;
+	}
+	
+	.balance{
+		width: 30%;
+	}
+	
+	.input-row label{
+		width: 190upx;
+	}
+	
+	.input-row input{
+		width:calc(100% - 210upx);
+		padding-right: 0;
+	}
+}
+
+.item-box{
+	width: 80%;
+	display: flex;
+	margin: 40upx 10% 0 10%;
+	.item{
+		height: 120upx;
+		border: 2upx solid #333;
+		@extend %border-radius;
+		
+		text{
+			display: block;
+			height: 60upx;
+			text-align: center;
+		}
+		
+		text:first-child{
+			line-height: 70upx;
+		}
+		
+		text:last-child{
+			line-height: 50upx;
+		}
+	}
+	.yearCard{
+		width: 60%;
+	}
+	
+	.money{
+		width: 40%;
+		.discount{
+			font-size: 28upx;
+			color: #999;
+		}
+	}
+}
+
+
+	
+
+.input-box{
+	width: 100%;
+	margin-top: 40upx;
+	height:60upx;
+	position: relative;
+	image{
+		float: right;
+		width: 60upx;
+		height: 60upx;
+	}
+	input{
+		float: right;
+		width: 200upx;
+		border-bottom: 2upx solid #333;
+		height: 60upx;
+		line-height: 60upx;
+	}
+	text{
+		position: absolute;
+		bottom: 0;
+		right: 260upx;
+	}
+}
+
+
+.select-pay{
+	width: 100%;
+	margin-top: 40upx;
+	border: 2upx solid #333;
+	@extend %border-radius;
+	
+	input{
+		width: 100%;
+		@extend %ht80;
+		background: transparent;
+		border: none;
+		text-align: center;
+	}
+}
+
+.select-pay:hover{
+	background: rgb(235, 235, 228);
+}
+
+
+.pay-box{
+	width: 70%;
+	position: fixed;
+	top: 440upx;
+	left: 10%;
+	border: 2upx solid #333;
+	background: #fff;
+	height: 600upx;
+	padding: 40upx;
+	z-index: 3;
+	p{
+		font-size: 32upx;
+		color: #000;
+		margin-top: 20upx;
+	}
+	
+	.pay-way-box{
+		display: flex;
+		margin-top: 40upx;
+	}
+	
+}
+
+.pay-way{
+	width: 200upx;
+	@extend %ht80;
+	text-align: center;
+	border: 2upx solid #333;
+	@extend %border-radius;
+}
+
+.remark-box{
+	margin-top: 40upx;
+	height: 120upx;
+	.text{
+		float: left;
+		width: 120upx;
+		height: 120upx;
+	}
+	textarea{
+		float: left;
+		box-sizing: border-box;
+		width: calc(100% - 140upx);
+		border: 2upx solid #333;
+		@extend %border-radius;
+		background: transparent;
+		height: 120upx;
+		padding: 10upx;
+		
+	}
+}
+
+.btn-box{
+	width: 100%;
+	margin: 40upx 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	button{
+		width: 40%;
+		@extend %ht80;
+		border: 2upx solid #333;
+		@extend %border-radius;
+		margin: 0;
+	}
+}
+
+
+.mask{
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+

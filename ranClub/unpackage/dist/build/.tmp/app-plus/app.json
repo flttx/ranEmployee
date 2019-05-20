@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/car/manager/managerIndex",
+    "pages/car/message/message",
+    "pages/login/changePwd",
+    "pages/login/login",
+    "pages/car/pages/openCard/openCard",
+    "pages/car/pages/openOrder/openOrder",
+    "pages/car/pages/inputNumber/inputNumber",
+    "pages/car/pages/rechargeDetail/rechargeDetail",
+    "pages/car/pages/buyServiceDetail/buyServiceDetail",
+    "pages/car/pages/orderList/orderList",
+    "pages/car/pages/constructionList/constructionList",
+    "pages/car/pages/recordOrder/recordOrder",
+    "pages/car/pages/recordOrder/recordOrderDetail",
+    "pages/car/pages/creditOrder/creditOrder",
+    "pages/car/pages/statisticsReport/statisticsReport",
+    "pages/car/pages/openOrder/carInfo",
+    "pages/car/pages/openOrder/orderMemberList",
+    "pages/car/pages/openOrder/productList",
+    "pages/car/pages/openOrder/serviceList",
+    "pages/car/pages/openOrder/openOrderDetail",
+    "pages/car/pages/openOrder/constructionMember"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "uniappDemo",
+  "compilerVersion": "1.9.3",
+  "usingComponents": {
+    "page-head": "/components/page-head",
+    "page-foot": "/components/page-foot"
+  }
+}

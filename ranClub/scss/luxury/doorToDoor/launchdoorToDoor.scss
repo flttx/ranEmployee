@@ -1,0 +1,78 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%br{
+	border: 2upx solid;
+	border-radius: 12upx;
+}
+
+.content{
+	padding: 40upx;
+	font-size: 32upx;
+	
+	.box{
+		padding: 20upx;
+		@extend %br;
+	}
+	
+	.input-row{
+		height: 80upx;
+		margin-bottom: 20upx;
+		
+		.cellname{
+			float: left;
+			width: 200upx;
+			text-align: right;
+			@extend %ht80;
+		}
+		
+		input{
+			float: left;
+			width: calc(80% - 200upx);
+			margin-left: 20upx;
+			@extend %br;
+			padding: 0 10upx;
+			text-align: center;
+			font-size: 28upx;
+			@extend %ht80;
+		}
+	}
+	
+	.textarea-row{
+		height: 160upx;
+		.cellname{
+			float: left;
+			width: 200upx;
+			text-align: right;
+			@extend %ht80;
+			vertical-align: top;
+		}
+		
+		textarea{
+			float: left;
+			width: calc(100% - 230upx);
+			margin-left: 20upx;
+			padding: 10upx;
+			height: 160upx;
+			@extend %br;
+			box-sizing: border-box;
+		}
+	}
+	
+	.btn-box{
+		margin-top: 20upx;
+		height: 80upx;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 40upx;
+		
+		button{
+			width: 200upx;
+			@extend %ht80;
+			text-align: center;
+			@extend %br;
+		}
+	}
+}

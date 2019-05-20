@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.search .uni-icon-search, .search input, .row text, .tip-box ._p, .tip-box .select-row label, .tip-box .select-row view .select-line, .tip-box .select-row view .select text, .tip-box .tips, .tip-box .btn-row button {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.role-line view .role, .role-line view .select text, .role-line .add-line {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.row .operation-line .operation, .row .operation-line .operation-select text {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.content {
+  height: 100%;
+  padding-top: 40rpx;
+  overflow: hidden;
+}
+.search {
+  width: 80%;
+  margin: 0 10%;
+  height: 80rpx;
+  border: 2rpx solid #333;
+  border-radius: 60rpx;
+}
+.search .uni-icon-search {
+    float: left;
+    font-size: 48rpx;
+    margin-left: 10rpx;
+}
+.search input {
+    float: left;
+    width: calc(100% - 70rpx);
+    padding-left: 10rpx;
+}
+.role-line {
+  width: 80%;
+  margin: 40rpx 10%;
+  font-size: 32rpx;
+  height: 80rpx;
+  position: relative;
+}
+.role-line view .role {
+    width: 200rpx;
+    border: 2rpx solid;
+    padding-left: 20rpx;
+}
+.role-line view .role .uni-icon {
+      float: right;
+      height: 58rpx;
+      line-height: 58rpx;
+      border-left: 2rpx solid;
+}
+.role-line view .select {
+    width: 200rpx;
+    border: 2rpx solid;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+}
+.role-line view .select text {
+      display: block;
+      padding-left: 20rpx;
+}
+.role-line .add-line {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.role-line .add-line image {
+      float: right;
+      width: 40rpx;
+      height: 40rpx;
+      margin-left: 10rpx;
+      margin-top: 10rpx;
+}
+.row {
+  font-size: 32rpx;
+  width: 80%;
+  margin: 10rpx 12% 10rpx 8%;
+}
+.row text {
+    display: inline-block;
+    text-align: center;
+}
+.row .name {
+    width: 30%;
+}
+.row .phone {
+    width: 40%;
+    vertical-align: top;
+}
+.row .operation-line {
+    float: right;
+}
+.row .operation-line .operation {
+      width: 140rpx;
+      border: 2rpx solid;
+      margin-top: 15rpx;
+      padding-left: 10rpx;
+}
+.row .operation-line .operation .uni-icon {
+        float: right;
+        height: 48rpx;
+        line-height: 48rpx;
+        border-left: 2rpx solid;
+}
+.row .operation-line .operation-select {
+      width: 140rpx;
+      border: 2rpx solid;
+      background: #fff;
+      position: absolute;
+      z-index: 3;
+}
+.row .operation-line .operation-select text {
+        display: block;
+        padding-left: 10rpx;
+}
+.mask {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.tip-box {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border: 2rpx solid;
+  background: #fff;
+  padding: 40rpx 5%;
+  font-size: 32rpx;
+  z-index: 3;
+}
+.tip-box ._p {
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+.tip-box .select-row {
+    height: 80rpx;
+    margin-bottom: 40rpx;
+}
+.tip-box .select-row label {
+      float: left;
+      width: 160rpx;
+}
+.tip-box .select-row view {
+      float: left;
+      width: calc(100% - 200rpx);
+      position: relative;
+      font-size: 28rpx;
+}
+.tip-box .select-row view .select-line {
+        width: 100%;
+        border: 2rpx solid;
+        padding-left: 10rpx;
+}
+.tip-box .select-row view .select-line .uni-icon {
+          float: right;
+          height: 78rpx;
+          line-height: 78rpx;
+          border-left: 2rpx solid;
+}
+.tip-box .select-row view .select {
+        position: absolute;
+        top: 80rpx;
+        width: 100%;
+        border: 2rpx solid;
+        background: #fff;
+        z-index: 4;
+}
+.tip-box .select-row view .select text {
+          display: block;
+          padding-left: 20rpx;
+}
+.tip-box .tips {
+    font-size: 28rpx;
+    color: red;
+}
+.tip-box .btn-row {
+    margin-tip: 40rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.tip-box .btn-row button {
+      width: 200rpx;
+      text-align: center;
+      border: 2rpx solid;
+      border-radius: 12rpx;
+      font-size: 28rpx;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  -webkit-transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  -o-transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
+  opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+

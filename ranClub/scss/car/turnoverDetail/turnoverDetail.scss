@@ -1,0 +1,105 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+.content{
+	height: calc(100% - 40upx);
+	padding: 40upx 40upx 0;
+}
+
+.header{
+	height: 80upx;
+	
+	.date-picker{
+		padding-left: 10upx;
+		float: right;
+		width: 320upx;
+		@extend %ht80;
+		border: 2upx solid;
+		margin-right: 20upx;
+		picker{
+			width: 95%;
+		}
+	}
+	
+	.uni-icon{
+		float: right;
+		font-size: 44upx;
+		margin-top: 20upx;
+	}
+}
+
+.tabs{
+	margin-top: 40upx;
+	height: 80upx;
+	display: flex;
+	font-size: 32upx;
+	.tabs-item{
+		@extend %ht80;
+		flex: 1;
+		text-align: center;
+		position: relative;
+		.bar{
+			width: 100upx;
+			height: 2upx;
+			background: #333;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+swiper{
+	height: calc(100% - 250upx);
+}
+
+.li{
+	padding: 20upx;
+	border-bottom: 2upx solid;
+	
+	.main-info{
+		height: 80upx;
+		position: relative;
+		font-size: 32upx;
+		
+		view{
+			height: 40upx;
+			line-height: 40upx;
+		}
+		
+		.order-price{
+			position: absolute;
+			top: calc(50% - 20upx);
+			right: 0;
+			color: green;
+		}
+	}
+	
+	.other-info{
+		height: 40upx;
+		line-height: 40upx;
+		color: #999;
+		
+		.car-no{
+			float: left;
+			width: 60%;
+		}
+		
+		.worker{
+			float: right;
+			text-align: right;
+			width: 40%;
+		}
+	}
+}

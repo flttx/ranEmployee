@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content .setting-line, .content .setting-line .input-row, .content .setting-line .input-row input, .content .setting-line .operation-box, .content .bottom button, .member-box input, .member-box .edit-btn-box button {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.content .setting-line .operation-box .operation-num {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.content .box-title {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.content {
+  padding: 80rpx 80rpx 0;
+  height: calc(100% - 80rpx);
+  width: calc(100% - 160rpx);
+  position: relative;
+}
+.content .setting-line {
+    margin-bottom: 20rpx;
+}
+.content .setting-line .input-row {
+      float: left;
+      border: 2rpx solid;
+      border-radius: 12rpx;
+      padding-left: 10rpx;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+.content .setting-line .input-row label {
+        float: left;
+}
+.content .setting-line .input-row input {
+        float: left;
+}
+.content .setting-line .input-row.name {
+      width: calc(100% - 260rpx);
+}
+.content .setting-line .input-row.name input {
+        width: calc(100% - 150rpx);
+}
+.content .setting-line .input-row.long {
+      width: 100%;
+}
+.content .setting-line .operation-box {
+      float: right;
+      width: 240rpx;
+}
+.content .setting-line .operation-box .uni-icon-minus {
+        float: left;
+        font-size: 40rpx;
+        margin-top: 20rpx;
+}
+.content .setting-line .operation-box .uni-icon-plus {
+        float: right;
+        font-size: 40rpx;
+        margin-top: 20rpx;
+}
+.content .setting-line .operation-box .operation-num {
+        display: inline-block;
+        width: 120rpx;
+        margin-top: 10rpx;
+        margin-left: 20rpx;
+        border: 2rpx solid;
+        border-radius: 12rpx;
+        text-align: center;
+}
+.content .textarea-row {
+    height: 160rpx;
+    border: 2rpx solid;
+    border-radius: 12rpx;
+    width: 100%;
+    padding-left: 10rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.content .textarea-row label {
+      float: left;
+      height: 160rpx;
+      line-height: 160rpx;
+}
+.content .textarea-row textarea {
+      float: right;
+      width: calc(100% - 90rpx);
+      height: 160rpx;
+      line-height: 40rpx;
+}
+.content .box-title {
+    font-size: 32rpx;
+    margin-bottom: 10rpx;
+    margin-top: 40rpx;
+}
+.content .box-title image {
+      float: right;
+      width: 40rpx;
+      height: 40rpx;
+}
+.content .box {
+    border: 2rpx solid #333;
+    border-radius: 12rpx;
+    padding: 0 20rpx;
+    position: relative;
+}
+.content .box .service-item {
+      position: relative;
+      padding: 20rpx 0;
+}
+.content .box .service-item .service-item-name {
+        line-height: 1.4;
+}
+.content .box .service-item text {
+        display: block;
+        font-size: 28rpx;
+        line-height: 1.4;
+}
+.content .box .service-item .service-item-price {
+        position: absolute;
+        right: 80rpx;
+        top: calc(50% - 25rpx);
+        color: red;
+}
+.content .box .delete-icon {
+      position: absolute;
+      right: 0;
+      width: 40rpx;
+      height: 40rpx;
+      top: calc(50% - 20rpx);
+}
+.content .bottom {
+    position: absolute;
+    bottom: 80rpx;
+    height: 80rpx;
+    width: calc(100% - 160rpx);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.content .bottom button {
+      width: 200rpx;
+      float: right;
+      text-align: center;
+      border: 2rpx solid;
+      border-radius: 12rpx;
+}
+.mask {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.member-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  padding: 40rpx;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border: 2rpx solid;
+  background: #fff;
+  z-index: 3;
+}
+.member-box ._p {
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+.member-box radio-group {
+    width: 80%;
+    margin: 80rpx 10%;
+}
+.member-box radio-group .radio {
+      width: 50%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+.member-box radio-group .radio:nth-child(2n+1) {
+      float: left;
+      height: 80rpx;
+}
+.member-box radio-group .radio:nth-child(2n) {
+      float: right;
+      height: 80rpx;
+      text-align: right;
+}
+.member-box input {
+    width: calc(100% - 20rpx);
+    border: 2rpx solid #999;
+    border-radius: 12rpx;
+    padding: 0 10rpx;
+    margin-top: 20rpx;
+}
+.member-box textarea {
+    width: calc(100% - 20rpx);
+    height: 160rpx;
+    line-height: 160rpx;
+    border: 2rpx solid #999;
+    border-radius: 12rpx;
+    padding: 0 10rpx;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+}
+.member-box .edit-btn-box {
+    height: 80rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40rpx;
+}
+.member-box .edit-btn-box button {
+      width: 60%;
+      text-align: center;
+}
+.no-data {
+  color: #999;
+  text-align: center;
+}
+

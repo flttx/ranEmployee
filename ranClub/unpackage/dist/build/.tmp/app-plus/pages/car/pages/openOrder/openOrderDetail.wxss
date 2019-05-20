@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content .header, .box .car-no, .menu-box text, .btn-box text, .settlement-box .settlement-btn-box button {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.box .car-title, .box .car-info .car-info-line, .changeMember text {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.box-title, .box .member-info, .settlement-box checkbox-group .checkbox-item .input-box input {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.content {
+  height: 100%;
+}
+.content .header {
+    text-align: center;
+    margin-top: 20rpx;
+}
+.order-info, .settlement-info {
+  width: 84%;
+  margin: 20rpx 8%;
+}
+.box-title {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  margin-top: 40rpx;
+}
+.box-title image {
+    float: right;
+    width: 40rpx;
+    height: 40rpx;
+}
+.box {
+  border: 2rpx solid #333;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  position: relative;
+}
+.box .car-title {
+    font-size: 32rpx;
+}
+.box .car-title .coupon {
+      float: right;
+}
+.box .car-no {
+    text-align: center;
+    font-size: 56rpx;
+}
+.box .member-info {
+    display: block;
+    text-align: right;
+    font-size: 28rpx;
+}
+.box .car-info {
+    margin: 0 40rpx;
+}
+.box .car-info .car-info-line {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 40rpx;
+}
+.box .car-info .car-info-line .car-info-item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        font-size: 28rpx;
+}
+.box .car-info .car-info-line .car-info-item image {
+          width: 40rpx;
+          height: 40rpx;
+          vertical-align: top;
+          margin-top: 8rpx;
+}
+.box .car-info .car-info-line .car-info-item .car-color {
+          padding: 4rpx 60rpx;
+          background: #000;
+}
+.box .car-info .remark {
+      font-size: 28rpx;
+      margin-bottom: 20rpx;
+}
+@media screen and (max-width: 320px) {
+.car-info {
+    margin: 0 20rpx;
+}
+.car-color {
+    padding: 4rpx 40rpx;
+}
+}
+.grey {
+  color: #999;
+}
+.red {
+  color: red;
+}
+.changeMember text {
+  font-size: 28rpx;
+  float: right;
+  text-decoration: underline;
+}
+.menu-box {
+  width: 80%;
+  margin: 0 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.menu-box text, .btn-box text {
+  width: 40%;
+  text-align: center;
+  border: 2rpx solid #333;
+  border-radius: 12rpx;
+}
+.pay-money {
+  text-align: right;
+  height: 40rpx;
+}
+.btn-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40rpx !important;
+}
+.btn-box button {
+    width: 45%;
+}
+.mask {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.settlement-box {
+  position: fixed;
+  width: 80%;
+  border: 2rpx solid;
+  top: 10%;
+  left: 10%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40rpx;
+  font-size: 28rpx;
+  z-index: 3;
+}
+.settlement-box checkbox-group {
+    width: 80%;
+    margin: 20rpx 10%;
+}
+.settlement-box checkbox-group .checkbox-item {
+      display: block;
+      height: 100rpx;
+}
+.settlement-box checkbox-group .checkbox-item .input-box {
+        float: right;
+        width: calc(100% - 180rpx);
+        height: 40rpx;
+}
+.settlement-box checkbox-group .checkbox-item .input-box input {
+          float: left;
+          width: calc(100% - 40rpx);
+          border-bottom: 2rpx solid;
+}
+.settlement-box checkbox-group .checkbox-item .input-box text {
+          float: left;
+}
+.settlement-box checkbox-group .checkbox-item .balance {
+        float: left;
+        height: 40rpx;
+        padding-left: 40rpx;
+}
+.settlement-box .settlement-btn-box {
+    height: 80rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.settlement-box .settlement-btn-box button {
+      width: 200rpx;
+      border: 2rpx solid #333;
+      border-radius: 12rpx;
+}
+.discount-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  padding: 20rpx 40rpx 0 40rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  z-index: 3;
+  font-size: 32rpx;
+}
+.discount-box .close {
+    float: right;
+}
+.discount-box .tabs {
+    margin: 20rpx 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40rpx;
+}
+.discount-box .tabs .tab-item {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: 60rpx;
+      text-align: center;
+      position: relative;
+}
+.discount-box .tabs .tab-item .bar {
+        width: 100rpx;
+        height: 2rpx;
+        background: #666;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+}
+.discount-box swiper {
+    height: calc(100% - 130rpx);
+}
+.coupon-box {
+  height: 160rpx;
+  border: 2rpx solid;
+  margin-top: 20rpx;
+}
+.coupon-box .price {
+    float: left;
+    width: 200rpx;
+    height: 160rpx;
+    line-height: 140rpx;
+    text-align: center;
+}
+.coupon-box .price text {
+      font-size: 60rpx;
+      margin-right: 4rpx;
+}
+.coupon-box .coupon-info {
+    float: left;
+    width: calc(100% - 200rpx);
+    height: 100%;
+    padding: 10rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.coupon-box .coupon-info .coupon-name {
+      height: 60rpx;
+      line-height: 60rpx;
+}
+.coupon-box .coupon-info .coupon-desc, .coupon-box .coupon-info .coupon-date {
+      height: 40rpx;
+      line-height: 40rpx;
+      color: #999;
+      font-size: 28rpx;
+}
+

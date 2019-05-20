@@ -1,0 +1,43 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+.content{
+	padding: 40upx;
+	font-size: 32upx;
+}
+
+.box{
+	border: 2upx solid;
+	border-radius: 12upx;
+	padding: 40upx;
+	margin-bottom: 40upx;
+	
+	.line:not(:first-child){
+		margin-top: 40upx;
+	}
+	
+	.row{
+		
+		label{
+			display: inline-block;
+			width: 120upx;
+			vertical-align: top;
+		}
+		
+		.remark{
+			display: inline-block;
+			width: calc(100% - 120upx);
+		}
+	}
+}
+
+.back-btn{
+	float: right;
+	width: 200upx;
+	height: 80upx;
+	line-height: 80upx;
+	text-align: center;
+}

@@ -1,0 +1,517 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/car/manager/managerIndex",  //名车护理店长首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/flower/manager/managerIndex",  //花艺店长首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/flower/treasurer/treasurerIndex",  //花艺财务首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/car/manager/managerIndex",  //名车护理店长首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/luxury/treasurer/treasurerIndex",  //奢侈品护理财务首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/luxury/assistant/assistantIndex",  //奢侈品护理员工首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/luxury/logistics/logisticsIndex",  //奢侈品护理物流首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/luxury/manager/managerIndex",  //奢侈品护理店长首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		
+		
+		
+		{
+			"path": "pages/car/manager/managerIndex",  //名车护理店长首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/car/worker/workerIndex",   //名车护理师傅首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/car/treasurer/treasurerIndex",  //名车护理财务首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		
+		{
+			"path": "pages/car/assistant/assistantIndex",   //名车护理店助首页
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		
+		{
+			"path": "pages/login/changePwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	
+	"subPackages": [{
+		"root": "pages/car/pages",   //名车护理模块
+		"pages": [{
+			"path": "openCard/openCard",
+			"style": {
+				"navigationBarTitleText": "开卡",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/openOrder",
+			"style": {
+				"navigationBarTitleText": "开单"
+			}
+		},{
+			"path": "inputNumber/inputNumber",
+			"style": {
+				"navigationBarTitleText": "查询"
+			}
+		},{
+			"path": "rechargeDetail/rechargeDetail",
+			"style": {
+				"navigationBarTitleText": "充值详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "buyServiceDetail/buyServiceDetail",
+			"style": {
+				"navigationBarTitleText": "购买服务详情"
+			}
+		},{
+			"path": "orderList/orderList",
+			"style": {
+				"navigationBarTitleText": "订单列表",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "constructionList/constructionList",
+			"style": {
+				"navigationBarTitleText": "施工列表",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "recordOrder/recordOrder",
+			"style": {
+				"navigationBarTitleText": "入账订单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "recordOrder/recordOrderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "creditOrder/creditOrder",
+			"style": {
+				"navigationBarTitleText": "挂账订单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "statisticsReport/statisticsReport",
+			"style": {
+				"navigationBarTitleText": "统计报表",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/carInfo",
+			"style": {
+				"navigationBarTitleText": "车辆信息"
+			}
+		},{
+			"path": "openOrder/orderMemberList",
+			"style": {
+				"navigationBarTitleText": "会员列表",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/productList",
+			"style": {
+				"navigationBarTitleText": "销售产品",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/serviceList",
+			"style": {
+				"navigationBarTitleText": "服务项目",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/openOrderDetail",
+			"style": {
+				"navigationBarTitleText": "开单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/constructionMember",
+			"style": {
+				"navigationBarTitleText": "施工人员",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/productSetting",
+			"style": {
+				"navigationBarTitleText": "销售产品设置"
+			}
+		},{
+			"path": "openOrder/serviceSetting",
+			"style": {
+				"navigationBarTitleText": "服务项目设置"
+			}
+		},{
+			"path": "turnoverDetail/turnoverDetail",
+			"style": {
+				"navigationBarTitleText": "明细流水",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "turnoverDetail/rechargeDetail",
+			"style": {
+				"navigationBarTitleText": "充值详情"
+			}
+		},{
+			"path": "searchOrder/searchOrder",
+			"style": {
+				"navigationBarTitleText": "订单查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchCar/searchCar",
+			"style": {
+				"navigationBarTitleText": "车辆查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchCar/carDetail",
+			"style": {
+				"navigationBarTitleText": "车辆详情"
+			}
+		},{
+			"path": "searchCar/consumeRecord",
+			"style": {
+				"navigationBarTitleText": "消费记录",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchMember/searchMember",
+			"style": {
+				"navigationBarTitleText": "会员查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchMember/memberDetail",
+			"style": {
+				"navigationBarTitleText": "会员详情"
+			}
+		},{
+			"path": "searchMember/consumeRecord",
+			"style": {
+				"navigationBarTitleText": "消费账单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "staffManage/staffManage",
+			"style": {
+				"navigationBarTitleText": "员工管理"
+			}
+		},{
+			"path": "staffManage/editStaff",
+			"style": {
+				"navigationBarTitleText": "员工编辑"
+			}
+		}]
+	},{
+		"root": "pages/luxury/pages",   //奢侈品护理模块
+		"pages": [{
+			"path": "openOrder/openOrder",
+			"style": {
+				"navigationBarTitleText": "开单"
+			}
+		},{
+			"path": "openOrder/openOrderDetail",
+			"style": {
+				"navigationBarTitleText": "开单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/articleDetail",
+			"style": {
+				"navigationBarTitleText": "物件详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "outBound/outBound",
+			"style": {
+				"navigationBarTitleText": "物件出库单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "doorToDoor/doorToDoor",
+			"style": {
+				"navigationBarTitleText": "同城上门",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "doorToDoor/launchDoorToDoor",
+			"style": {
+				"navigationBarTitleText": "发起上门取件单"
+			}
+		},{
+			"path": "searchOrder/searchOrder",
+			"style": {
+				"navigationBarTitleText": "订单查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchOrder/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchOrder/articleStatus",
+			"style": {
+				"navigationBarTitleText": "物件状态",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchArticle/searchArticle",
+			"style": {
+				"navigationBarTitleText": "物件查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "logistics/logistics",
+			"style": {
+				"navigationBarTitleText": "物流",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "logistics/pickUp",
+			"style": {
+				"navigationBarTitleText": "同城上门取件",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "logistics/articleList",
+			"style": {
+				"navigationBarTitleText": "物件列表",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "logistics/delivery",
+			"style": {
+				"navigationBarTitleText": "同城上门送货",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		}]
+	},{
+		"root": "pages/flower/pages", //花艺模块
+		"pages": [{
+			"path": "receiveOrder/receiveOrder",
+			"style": {
+				"navigationBarTitleText": "接单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "receiveOrder/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "openOrder/openOrder",
+			"style": {
+				"navigationBarTitleText": "开单"
+			}
+		},{
+			"path": "openOrder/openOrderDetail",
+			"style": {
+				"navigationBarTitleText": "开单详情",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "outBound/outBound",
+			"style": {
+				"navigationBarTitleText": "花艺出库单",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},{
+			"path": "searchOrder/searchOrder",
+			"style": {
+				"navigationBarTitleText": "订单查询",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		}]
+	}]
+	
+	
+	
+}

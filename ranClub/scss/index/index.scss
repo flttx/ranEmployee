@@ -1,0 +1,47 @@
+
+.content{
+	padding: 0 40upx;
+	font-size: 28upx;
+	position: relative;
+	
+	.menu{
+		padding: 40upx 0;
+		margin-bottom: 60upx;
+		.menu-title{
+			width: 180upx;
+			height: 60upx;
+			line-height: 60upx;
+			border-bottom: 1px solid #333;
+		}
+		.menu-box{
+			margin: 20px 20px;
+			view{
+				display: flex;
+				.menu-item{
+					height: 120upx;
+					border: 1px solid #333;
+					border-radius: 10upx;
+					margin-bottom: 40upx;
+					justify-content: center;
+					align-items: center;
+				}
+				
+				.menu-item.small{
+					width: calc((100% - 80upx)/2);
+				}
+				
+				.menu-item.big{
+					width: 100%;
+				}
+				
+			}
+		}
+	}
+}
+
+
+::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+   color: transparent;
+}

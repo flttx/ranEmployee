@@ -1,0 +1,263 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%ht60{
+	height: 60upx;
+	line-height: 60upx;
+}
+
+%ht40{
+	height: 40upx;
+	line-height: 40upx;
+}
+
+
+.content{
+	padding: 80upx 80upx 0;
+	height: calc(100% - 80upx);
+	width: calc(100% - 160upx);
+	position: relative;
+	
+	.setting-line{
+		@extend %ht80;
+		margin-bottom: 20upx;
+		
+		.input-row{
+			float: left;
+			@extend %ht80;
+			border: 2upx solid;
+			border-radius: 12upx;
+			padding-left: 10upx;
+			box-sizing: border-box;
+			
+			label{
+				float: left;
+			}
+			
+			input{
+				float: left;
+				@extend %ht80;
+			}
+		}
+		
+		.input-row.name{
+			width:calc(100% - 260upx);
+			
+			input{
+				width: calc(100% - 150upx);
+			}
+		}
+		
+		.input-row.long{
+			width: 100%;
+		}
+		
+		.operation-box{
+			float: right;
+			width: 240upx;
+			@extend %ht80;
+			.uni-icon-minus{
+				float: left;
+				font-size: 40upx;
+				margin-top: 20upx;
+			}
+			.uni-icon-plus{
+				float: right;
+				font-size: 40upx;
+				margin-top: 20upx;
+			}
+			.operation-num{
+				display: inline-block;
+				width: 120upx;
+				@extend %ht60;
+				margin-top: 10upx;
+				margin-left: 20upx;
+				border: 2upx solid;
+				border-radius: 12upx;
+				text-align: center;
+			}
+		}
+	}
+	
+	.textarea-row{
+		height: 160upx;
+		border: 2upx solid;
+		border-radius: 12upx;
+		width: 100%;
+		padding-left: 10upx;
+		box-sizing: border-box;
+		
+		label{
+			float: left;
+			height: 160upx;
+			line-height: 160upx;
+		}
+		
+		textarea{
+			float: right;
+			width: calc(100% - 90upx);
+			height: 160upx;
+			line-height: 40upx;
+		}
+	}
+	
+	.box-title{
+		@extend %ht40;
+		font-size: 32upx;
+		margin-bottom: 10upx;
+		margin-top: 40upx;
+		
+		image{
+			float: right;
+			width: 40upx;
+			height: 40upx;
+		}
+	}
+	
+	.box{
+		border: 2upx solid #333;
+		border-radius: 12upx;
+		padding: 0 20upx;
+		position: relative;
+		
+		.service-item{
+			position: relative;
+			padding: 20upx 0;
+			
+			.service-item-name{
+				line-height: 1.4
+			}
+			
+			text{
+				display: block;
+				font-size: 28upx;
+				line-height: 1.4;
+			}
+			
+			.service-item-price{
+				position: absolute;
+				right: 80upx;
+				top: calc(50% - 25upx);
+				color: red;
+			}
+		}
+		
+		
+		.delete-icon{
+			position: absolute;
+			right: 0;
+			width: 40upx;
+			height: 40upx;
+			top: calc(50% - 20upx);
+		}
+	}
+	
+	.bottom{
+		position: absolute;
+		bottom: 80upx;
+		height: 80upx;
+		width: calc(100% - 160upx);
+		box-sizing: border-box;
+		
+		button{
+			width: 200upx;
+			float: right;
+			@extend %ht80;
+			text-align: center;
+			border: 2upx solid;
+			border-radius: 12upx;
+		}
+	}
+}
+
+.mask{
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.member-box{
+	box-sizing: border-box;
+	width: 80%;
+	padding: 40upx;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	border: 2upx solid;
+	background: #fff;
+	z-index: 3;
+	
+	p{
+		height: 40upx;
+		line-height: 40upx;
+		text-align: center;
+	}
+	
+	radio-group{
+		width: 80%;
+		margin: 80upx 10%;
+		
+		.radio{
+			width: 50%;
+			box-sizing: border-box;
+		}
+		
+		.radio:nth-child(2n+1){
+			float: left;
+			height: 80upx;
+		}
+		
+		.radio:nth-child(2n){
+			float: right;
+			height: 80upx;
+			text-align: right;
+		}
+		
+	}
+	
+	input{
+		width: calc(100% - 20upx);
+		@extend %ht80;
+		border: 2upx solid #999;
+		border-radius: 12upx;
+		padding: 0 10upx;
+		margin-top: 20upx;
+	}
+	
+	textarea{
+		width: calc(100% - 20upx);
+		height: 160upx;
+		line-height: 160upx;
+		border: 2upx solid #999;
+		border-radius: 12upx;
+		padding: 0 10upx;
+		margin-top: 20upx;
+		font-size: 28upx;
+	}
+	
+	.edit-btn-box{
+		height: 80upx;
+		display: flex;
+		justify-content: center;
+		margin-top: 40upx; 
+		
+		button{
+			width: 60%;
+			@extend %ht80;
+			text-align: center;
+		}
+	}
+	
+}
+
+.no-data{
+	color: #999;
+	text-align: center;
+}

@@ -1,0 +1,62 @@
+ %ht80{
+ 	height: 80upx;
+ 	line-height: 80upx;
+ }
+ 
+ .content{
+ 	height: calc(100% - 40upx);
+ 	padding-top: 40upx;
+ }
+ 
+ .search{
+ 	width: 80%;
+ 	margin: 0 10%;
+ 	height: 80upx;
+ 	border: 2upx solid #333;
+ 	border-radius: 60upx;
+ 	.uni-icon-search{
+ 		float: left;
+ 		font-size: 48upx;
+ 		@extend %ht80;
+ 		margin-left: 10upx;
+ 	}
+ 	input{
+ 		float: left;
+ 		width: calc(100% - 70upx);
+ 		@extend %ht80;
+ 		padding-left: 10upx;
+ 	}
+ }
+ 
+ .scroll-wrapper{
+ 	margin-bottom: 20upx;
+	width: 80%;
+	margin: 0 10%;
+	box-sizing: border-box;
+		
+	.li{
+		padding: 30upx 0;
+		border-bottom: 2upx solid #666;
+		position: relative;
+		
+		.user-info{
+			height: 60upx;
+			line-height: 60upx;
+			font-size: 36upx;
+			
+			.phone{
+				font-size: 28upx;
+				color: #999;
+				margin-left: 20upx;
+			}
+		}
+		
+		.card-info{
+			color: #999;
+			
+			.card-type{
+				float: right;
+			}
+		}
+	}
+ }

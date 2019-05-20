@@ -1,0 +1,96 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+.content{
+	height: calc(100% - 44upx);
+	padding-top: 40upx;
+}
+
+.search{
+	width: 60%;
+	margin: 0 10%;
+	height: 80upx;
+	border: 2upx solid #333;
+	border-radius: 60upx;
+	.uni-icon-search{
+		float: left;
+		font-size: 48upx;
+		@extend %ht80;
+		margin-left: 10upx;
+	}
+	input{
+		float: left;
+		width: calc(100% - 70upx);
+		@extend %ht80;
+		padding-left: 10upx;
+	}
+}
+
+.statistics-btn{
+	display: inline-block;
+	@extend %ht80;
+	position: absolute;
+	right: 10%;
+	top: 20px;
+}
+
+.scroll-wrapper{
+	top: 120upx;
+	margin-bottom: 20upx;
+	.orderList{
+		width: 90%;
+		margin: 20upx 5%;
+		
+		.li{
+			padding: 20upx 40upx;
+			border-bottom: 2upx solid #666;
+			position: relative;
+			
+			.order-status{
+				display: block;
+				width: 100upx;
+				height: 48upx;
+				line-height: 48upx;
+				font-size: 24upx;
+				color: #fff;
+				text-align: center;
+				background: green;
+				border-radius: 12upx;
+			}
+			
+			.car-no{
+				width: 70%;
+				height: 60upx;
+				font-size: 36upx;
+				line-height: 60upx;
+			}
+			
+			.order-date{
+				display: block;
+				width: 70%;
+				color: #999;
+				font-size: 28upx;
+			}
+			
+			.order-item{
+				width: 70%;
+				
+				text{
+					display: block;
+					color: #999;
+					font-size: 28upx;
+				}
+			}
+			
+			.order-money{
+				color: red;
+				position: absolute;
+				right: 40upx;
+				top: calc(50% - 20upx);
+			}
+			
+		}
+	}
+}

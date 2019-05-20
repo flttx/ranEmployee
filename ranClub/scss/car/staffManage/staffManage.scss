@@ -1,0 +1,274 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%ht60{
+	height: 60upx;
+	line-height: 60upx;
+}
+
+%ht50{
+	height: 50upx;
+	line-height: 50upx;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.content{
+	height: 100%;
+	padding-top: 40upx;
+	overflow: hidden;
+}
+
+.search{
+	width: 80%;
+	margin: 0 10%;
+	height: 80upx;
+	border: 2upx solid #333;
+	border-radius: 60upx;
+	.uni-icon-search{
+		float: left;
+		font-size: 48upx;
+		@extend %ht80;
+		margin-left: 10upx;
+	}
+	input{
+		float: left;
+		width: calc(100% - 70upx);
+		@extend %ht80;
+		padding-left: 10upx;
+	}
+}
+
+.role-line{
+	width: 80%;
+	margin: 40upx 10%;
+	font-size: 32upx;
+	height: 80upx;
+	position: relative;
+	
+	view{
+		.role{
+			width: 200upx;
+			@extend %ht60;
+			border: 2upx solid;
+			padding-left: 20upx;
+			
+			.uni-icon{
+				float: right;
+				height: 58upx;
+				line-height: 58upx;
+				border-left: 2upx solid;
+			}
+		}
+		
+		.select{
+			width: 200upx;
+			border: 2upx solid;
+			background: #fff;
+			position: absolute;
+			z-index: 3;
+			text{
+				display: block;
+				@extend %ht60;
+				padding-left: 20upx;
+			}
+		}
+	}
+	
+	.add-line{
+		position: absolute;
+		right: 0;
+		top: 0;
+		@extend %ht60;
+		
+		image{
+			float: right;
+			width: 40upx;
+			height: 40upx;
+			margin-left: 10upx;
+			margin-top: 10upx;
+		}
+	}
+	
+	
+}
+
+.row{
+	font-size: 32upx;
+	width: 80%;
+	margin: 10upx 12% 10upx 8% ;
+	
+	text{
+		display: inline-block;
+		text-align: center;
+		@extend %ht80;
+	}
+	
+	.name{
+		width:30%;
+	}
+	
+	.phone{
+		width: 40%;
+		vertical-align: top;
+	}
+	
+	.operation-line{
+		float: right;
+		
+		.operation{
+			@extend %ht50;
+			width: 140upx;
+			border: 2upx solid;
+			margin-top: 15upx;
+			padding-left: 10upx;
+			
+			.uni-icon{
+				float: right;
+				height: 48upx;
+				line-height: 48upx;
+				border-left: 2upx solid;
+			}
+		}
+		
+		.operation-select{
+			width: 140upx;
+			border: 2upx solid;
+			background: #fff;
+			position: absolute;
+			z-index: 3;
+			
+			text{
+				display: block;
+				@extend %ht50;
+				padding-left: 10upx;
+			}
+		}
+		
+		
+	}
+}
+
+.mask{
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.tip-box{
+	width: 80%;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	border: 2upx solid;
+	background: #fff;
+	padding: 40upx 5%;
+	font-size: 32upx;
+	z-index: 3;
+	
+	p{
+		@extend %ht80;
+		text-align: center;
+		margin-bottom: 40upx;
+	}
+	
+	.select-row{
+		height: 80upx;
+		margin-bottom: 40upx;
+		
+		label{
+			float: left;
+			width: 160upx;
+			@extend %ht80;
+		}
+		
+		view{
+			float: left;
+			width: calc(100% - 200upx);
+			position: relative;
+			font-size: 28upx;
+			
+			.select-line{
+				width: 100%;
+				@extend %ht80;
+				border: 2upx solid;
+				padding-left: 10upx;
+				
+				.uni-icon{
+					float: right;
+					height: 78upx;
+					line-height: 78upx;
+					border-left: 2upx solid;
+				}
+			}
+			
+			.select{
+				position: absolute;
+				top: 80upx;
+				width: 100%;
+				border: 2upx solid;
+				background: #fff;
+				z-index: 4;
+				
+				text{
+					display: block;
+					@extend %ht80;
+					padding-left: 20upx;
+				}
+			}
+		}
+	}
+	
+	.tips{
+		@extend %ht80;
+		font-size: 28upx;
+		color: red;
+	}
+	
+	.btn-row{
+		margin-tip: 40upx;
+		display: flex;
+		justify-content: space-between;
+		
+		button{
+			width: 200upx;
+			@extend %ht80;
+			text-align: center;
+			border: 2upx solid;
+			border-radius: 12upx;
+			font-size: 28upx;
+		}
+	}
+}
+
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

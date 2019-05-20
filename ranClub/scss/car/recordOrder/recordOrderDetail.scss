@@ -1,0 +1,206 @@
+%ft28 {
+	font-size: 28upx;
+}
+
+%ht80 {
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%br{
+	border-radius: 12upx;
+}
+
+.header{
+	text-align: center;
+	@extend %ht80;
+	margin-top: 20upx;
+}
+
+.order-info, .settlement-info{
+	width: 84%;
+	margin: 20upx 8%;
+}
+
+.box{
+	border: 2upx solid #333;
+	@extend %br;
+	padding: 20upx;
+	margin-bottom: 40upx;
+	position: relative;
+	
+	.car-title{
+		height: 60upx;
+		line-height: 60upx;
+		font-size: 32upx;
+		
+		.coupon{
+			float: right;
+		}
+	}
+	
+	.car-no{
+		@extend %ht80;
+		text-align: center;
+		font-size: 56upx;
+	}
+	
+	.member-info{
+		display: block;
+		text-align: right;
+		height: 40upx;
+		line-height: 40upx;
+		@extend %ft28;
+	}
+	
+	.car-info{
+		margin:0 40upx;
+		
+		.car-info-line{
+			height: 60upx;
+			line-height: 60upx;
+			display: flex;
+			margin-bottom: 40upx;
+			
+			.car-info-item{
+				flex: 1;
+				@extend %ft28;
+				
+				image{
+					width: 40upx;
+					height: 40upx;
+					vertical-align: top;
+					margin-top: 8upx;
+				}
+				
+				.car-color{
+					padding: 4upx 60upx;
+					background: #000;
+				}
+			}
+		}
+		
+		.remark{
+			font-size: 28upx;
+			margin-bottom: 20upx;
+		}
+	}
+	
+	.product-info{
+		width: 50%;
+		padding: 10upx;
+		
+		text{
+			display: block;
+		}
+		
+		.desc{
+			@extend %ft28;
+		}
+		
+	}
+	
+	.product-num{
+		position: absolute;
+		top: calc(50% - 24upx);
+		left: 50%;
+		color: #999;
+	}
+	
+	.right{
+		right: 40upx;
+	}
+	
+	
+	
+	
+}
+
+.box-title{
+	height: 40upx;
+	line-height: 40upx;
+	font-size: 32upx;
+	margin-bottom: 10upx;
+}
+
+@media screen and (max-width: 320px) {
+	.car-info{
+		margin:0 20upx;
+	}
+	
+	.car-color{
+		padding: 4upx 40upx;
+	}
+}
+
+
+.service-item{
+	position: relative;
+	padding: 20upx 0;
+	
+	text{
+		display: block;
+		@extend %ft28;
+	}
+}
+
+
+.service-item:not(:first-child){
+	border-top: 2upx solid #666;
+}
+
+.service-item-price{
+	position: absolute;
+	right: 0;
+	top: calc(50% - 40upx);
+	
+	text{
+		font-size: 32upx;
+		display: block;
+		line-height: 44upx;
+	}
+}
+
+.tip{
+	height: 120upx;
+	line-height: 120upx;
+	border: 2upx solid #333;
+	text-align: center;
+	margin-bottom: 20upx;
+}
+
+.pay-sum{
+	text-align: right;
+}
+
+.settlement-info .service-item-price{
+	top: calc(50% - 20upx);
+}
+
+.bottom{
+	height: 80upx;
+	
+	.bottom-btn{
+		float: right;
+		margin-right: 40upx;
+		width: 280upx;
+		height: 60upx;
+		line-height: 60upx;
+		text-align: center;
+		border: 2upx solid #333;
+		@extend %br;
+	}
+}
+
+
+.grey{
+	color: #999;
+}
+
+.red{
+	color: red;
+}
+
+.line-through{
+	text-decoration: line-through;
+}

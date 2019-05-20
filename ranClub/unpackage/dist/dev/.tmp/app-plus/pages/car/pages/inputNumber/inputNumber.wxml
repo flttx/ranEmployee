@@ -1,0 +1,1 @@
+<view class="content" bind:__l="__l"><view>请输入会员卡号/手机号码</view><input type="number" placeholder="会员卡号/手机号码" data-event-opts="{{[['input',[['__set_model',['$0','searchValue','$event',[]],['']]]]]}}" value="{{searchValue}}" bindinput="__e"/><button data-event-opts="{{[['tap',[['openPage',['$event']]]]]}}" bindtap="__e">确定</button></view>

@@ -1,0 +1,87 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+.content{
+	height: calc(100% - 40upx);
+	padding: 40upx 40upx 0;
+	font-size: 32upx;
+}
+
+.header{
+	height: 80upx;
+	
+	.date-picker{
+		padding-left: 10upx;
+		float: right;
+		width: 320upx;
+		@extend %ht80;
+		border: 2upx solid;
+		margin-right: 20upx;
+		picker{
+			width: 95%;
+		}
+	}
+	
+	.uni-icon{
+		float: right;
+		font-size: 44upx;
+		margin-top: 20upx;
+	}
+}
+
+.scroll-wrapper{
+	height: calc(100% - 100upx);
+	margin-top: 20upx;
+	
+	.item{
+		padding: 20upx;
+		border-bottom: 2upx solid;
+		
+		.item-info{
+			height: 160upx;
+			position: relative;
+			
+			image{
+				float: left;
+				width: 160upx;
+				height: 160upx;
+				border-radius: 12upx;
+			}
+			
+			.item-desc{
+				float: left;
+				width: calc(100% - 180upx);
+				margin-left: 20upx;
+				heigth: 160upx;
+				
+				text{
+					display: block;
+					height: 60upx;
+					line-height: 60upx;
+				}
+			}
+			
+			.btn{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				@extend %ht80;
+				padding: 0 20upx;
+				border: 2upx solid;
+				border-radius: 12upx;
+			}
+		}
+	}
+}
+
+.red{
+	color: red;
+}

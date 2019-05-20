@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.search .uni-icon-search, .search input, .tab .tab-item, .fixed-btn {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.content {
+  height: 100%;
+  overflow: hidden;
+}
+.search {
+  width: 80%;
+  margin: 40rpx 10% 0;
+  height: 80rpx;
+  border: 2rpx solid #333;
+  border-radius: 60rpx;
+}
+.search .uni-icon-search {
+    float: left;
+    font-size: 48rpx;
+    margin-left: 10rpx;
+}
+.search input {
+    float: left;
+    width: calc(100% - 70rpx);
+    padding-left: 10rpx;
+}
+.tab {
+  width: 90%;
+  height: 80rpx;
+  margin: 20rpx auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32rpx;
+}
+.tab .tab-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    position: relative;
+}
+.tab .tab-item .bar {
+      width: 100rpx;
+      height: 2rpx;
+      background: #333;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+}
+swiper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 200rpx);
+  padding: 0 40rpx 20rpx;
+}
+swiper .list {
+    height: 100%;
+    font-size: 32rpx;
+}
+swiper .list .item {
+      padding: 20rpx;
+      border-bottom: 2rpx solid;
+}
+swiper .list .item .user-name {
+        font-size: 34rpx;
+        font-weight: bold;
+}
+swiper .list .item .item-info text {
+        display: block;
+        line-height: 1.5;
+}
+swiper .list .item .btn-box {
+        height: 80rpx;
+        margin-top: 10rpx;
+}
+swiper .list .item .btn-box button {
+          float: right;
+          width: 200rpx;
+          margin: 0;
+          padding: 0;
+          height: 80rpx;
+          line-height: 80rpx;
+          text-align: center;
+          border: 2rpx solid;
+          border-radius: 12rpx;
+          font-size: 32rpx;
+}
+.fixed-btn {
+  width: 260rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 40rpx;
+  left: calc(50% - 130rpx);
+  border: 2rpx solid;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  margin: 0;
+  padding: 0;
+}
+

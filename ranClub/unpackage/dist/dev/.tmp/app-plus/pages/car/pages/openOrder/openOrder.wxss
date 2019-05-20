@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.form .cardNo view, .form .keyboard .provinces .row text, .form .keyboard .english .line text, .input-box, .input-box input, .input-box .btn-box button {
+  border: 2rpx solid #333;
+}
+.form .cardNo view, .form .keyboard .provinces .row text, .form .keyboard .english .line text, .form .bottom button, .input-box input, .input-box .btn-box button {
+  border-radius: 12rpx;
+}
+.form .keyboard .english .line text, .form .bottom button, .input-box input, .input-box .btn-box button {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.form .cardNo view text, .form .keyboard .provinces .row text {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.form {
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  width: 100%;
+}
+.form .cardNo {
+    height: 120rpx;
+    margin: 0 20rpx;
+}
+.form .cardNo view {
+      float: left;
+      width: calc(100%/9);
+      height: 120rpx;
+      vertical-align: top;
+}
+.form .cardNo view text {
+        display: block;
+        width: 40rpx;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 1px solid #666;
+        font-size: 48rpx;
+}
+.form .cardNo view:not(:first-child) {
+      margin-left: 10rpx;
+}
+.form .cardNo .bigFont {
+      font-size: 52rpx;
+      line-height: 120rpx;
+      text-align: center;
+}
+.form .cardNo .active {
+      border: 4rpx solid green !important;
+}
+.form .cardNo .num-box {
+      margin-left: calc(100% - (100%/9)*7 - 90rpx) !important;
+}
+.form .keyboard {
+    margin-top: 20rpx;
+    width: 100%;
+}
+.form .keyboard .provinces .row {
+      margin: 20rpx;
+      height: 120rpx;
+}
+.form .keyboard .provinces .row text {
+        float: left;
+        width: calc((100% - 152rpx)/8);
+        vertical-align: top;
+        text-align: center;
+        font-size: 48rpx;
+}
+.form .keyboard .provinces .row text:not(:first-child) {
+        margin-left: 16rpx;
+}
+.form .keyboard .english {
+      margin-top: 160rpx;
+}
+.form .keyboard .english .line {
+        height: 80rpx;
+        margin-top: 20rpx;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+}
+.form .keyboard .english .line text {
+          float: left;
+          width: 60rpx;
+          text-align: center;
+}
+.form .keyboard .english .line text:not(:first-child) {
+          margin-left: 10rpx;
+}
+.form .bottom {
+    width: 90%;
+    height: 80rpx;
+    margin: 20rpx 5%;
+}
+.form .bottom button {
+      float: left;
+      width: 200rpx;
+      font-size: 32rpx;
+}
+.form .bottom image {
+      float: left;
+      width: 100rpx;
+      height: 80rpx;
+      margin: 0 calc((100% - 500rpx)/2);
+}
+.mask {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.input-box {
+  width: 80%;
+  height: 400rpx;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -200rpx;
+  background: #fff;
+  z-index: 3;
+}
+.input-box .p {
+    height: 120rpx;
+    line-height: 120rpx;
+    color: #000;
+    text-align: center;
+    font-size: 40rpx;
+}
+.input-box input {
+    width: 80%;
+    margin: 0 10%;
+    padding: 0 10rpx;
+}
+.input-box .btn-box {
+    width: 80%;
+    height: 80rpx;
+    margin: 40rpx 10%;
+}
+.input-box .btn-box button {
+      width: 200rpx;
+}
+.input-box .btn-box button.left {
+      float: left;
+}
+.input-box .btn-box button.right {
+      float: right;
+}
+

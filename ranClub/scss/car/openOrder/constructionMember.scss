@@ -1,0 +1,25 @@
+
+
+.content{
+	height: 100%;
+	font-size: 36upx;
+	checkbox-group{
+		width: 60%;
+		margin: 80upx 20%;
+		
+		.checkbox{
+			width: 40%;
+		}
+		
+		.checkbox:nth-child(2n+1){
+			float: left;
+			height: 120upx;
+		}
+		
+		.checkbox:nth-child(2n){
+			float: right;
+			height: 120upx;
+		}
+		
+	}
+}

@@ -1,0 +1,73 @@
+%ht80{
+	height: 80upx;
+	line-height: 80upx;
+}
+
+.content{
+	height: calc(100% - 44upx);
+	padding-top: 40upx;
+}
+
+.search{
+	width: 80%;
+	margin: 0 10%;
+	height: 80upx;
+	border: 2upx solid #333;
+	border-radius: 60upx;
+	.uni-icon-search{
+		float: left;
+		font-size: 48upx;
+		@extend %ht80;
+		margin-left: 10upx;
+	}
+	input{
+		float: left;
+		width: calc(100% - 70upx);
+		@extend %ht80;
+		padding-left: 10upx;
+	}
+}
+
+.scroll-wrapper{
+	top: 120upx;
+	margin-bottom: 20upx;
+	.orderList{
+		width: 90%;
+		margin: 20upx 5%;
+		
+		.li{
+			padding: 20upx 40upx;
+			border-bottom: 2upx solid #666;
+			position: relative;
+			
+			.construction-date{
+				display: block;
+				width: 70%;
+				color: #999;
+				font-size: 14px;
+			}
+			
+			.car-no{
+				width: 70%;
+				height: 60upx;
+				font-size: 36upx;
+				line-height: 60upx;
+			}
+			
+			.construction-status{
+				color: green;
+				position: absolute;
+				right: 20px;
+				top: calc(50% - 10px);
+			}
+			
+			.construction-item{
+				display: block;
+				width: 70%;
+				color: #999;
+				font-size: 14px;
+			}
+			
+		}
+	}
+}

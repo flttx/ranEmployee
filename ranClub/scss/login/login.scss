@@ -1,0 +1,60 @@
+$fontSize: 32upx;
+
+%ht80 {
+	height: 80upx;
+	line-height: 80upx;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: calc((100% - 340px)/2);
+	font-size: $fontSize;
+	.logo {
+		width: 160px;
+		height: 160px;
+		margin: 0 auto;
+		border: 1px solid #333;
+		margin-bottom: 40px;
+	}
+	.input-row {
+		width: 80%;
+		border: 1px solid #333;
+		border-radius: 20px;
+		margin: 10px auto;
+		height: 80upx;
+		
+		
+		
+		
+		label{
+			float: left;
+			@extend %ht80;
+			width: 120upx;
+			padding-left: 40upx;
+		}
+		input{
+			float: left;
+			@extend %ht80;
+		}
+		
+		text{
+			float: right;
+			font-size: 24px;
+			@extend %ht80;
+			margin-right: 20upx;
+			color: #666;
+		}
+	}
+	
+	.btn-row{
+		.loginBtn{
+			width: 120px;
+		}
+	}
+}
+
+
+
+
+

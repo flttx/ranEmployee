@@ -1,0 +1,110 @@
+
+
+
+.content{
+	height: 100%;
+	overflow: hidden;
+}
+
+.header{
+	padding: 20upx 40upx;
+	border-bottom: 2upx solid #999;
+	
+	.text{
+		display: inline-block;
+		width: 200upx;
+		height: 120upx;
+		line-height: 120upx;
+		font-size: 40upx;
+		vertical-align: top;
+	}
+	
+	.sum{
+		display: inline-block;
+		width: calc(100% - 240upx);
+		height: 120upx;
+		
+		p{
+			height: 50%;
+			
+			text{
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+}
+
+
+.tabs{
+	width: 80%;
+	margin: 40upx 10%;
+	height: 80upx;
+	display: flex;
+	
+	.tabs-item{
+		flex: 1;
+		height: 80upx;
+		line-height: 80upx;
+		text-align: center;
+		position: relative;
+		font-size: 32upx;
+		
+		.bar{
+			display: inline-block;
+			width: 100upx;
+			height: 4upx;
+			background: #666;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+swiper{
+	height: calc(100% - 80upx);
+}
+
+.cash-flow{
+	padding-bottom: 60upx;
+}
+
+.title{
+	height: 120upx;
+	line-height: 120upx;
+	text-align: center;
+	font-size: 44upx;
+}
+
+.detail{
+	width: 84%;
+	margin: 0 8%;
+	padding: 20upx 0;
+	
+	text{
+		display: block;
+		height: 60upx;
+		line-height: 60upx;
+		
+		.amount{
+			float: right;
+		}
+	}
+	
+	.item{
+		font-size: 28upx;
+		padding-left: 20upx;
+	}
+
+	.total{
+		font-size: 32upx;
+	}
+}
+
+.detail:not(:last-child){
+	border-bottom: 2upx solid #999;
+}
+

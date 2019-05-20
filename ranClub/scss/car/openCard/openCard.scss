@@ -1,0 +1,162 @@
+%ht80 {
+	height: 80upx;
+	line-height: 80upx;
+}
+
+%border-radius {
+	border-radius: 12upx;
+}
+
+
+.content{
+	padding-top: 40upx;
+	.form{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 32upx;
+		.input{
+			display: block;
+			margin-top: 40upx;
+			height: 80upx;
+			label{
+				float: left;
+				width: 140upx;
+				@extend %ht80;
+				text-align: right;
+				margin-right: 20upx;
+			}
+			.memberNo{
+				float: left;
+				width: calc(100% - 180upx);
+				@extend %ht80;
+				border: 1px solid #333;
+				@extend %border-radius;
+				padding-left: 10upx;
+			}
+			view{
+				float: left;
+				height: 80upx;
+				width: calc(100% - 180upx);
+				border: 1px solid #333;
+				@extend %border-radius;
+				
+				input{
+					float: left;
+					padding-left: 10upx;
+					width: calc(100% - 70upx);
+					@extend %ht80;
+				}
+				text{
+					float: right;
+					font-size: 24px;
+					@extend %ht80;
+					margin-right: 10upx;
+					color: #666;
+					
+				}
+			}
+			
+			
+			
+		}
+		
+		.sex-box{
+			width: 100%;
+			height: 80upx;
+			margin-top: 40upx;
+			radio-group{
+				display: inline-block;
+				@extend %ht80;
+				.radio{
+					@extend %ht80;
+				}
+			}
+			.sexLabel{
+				display: inline-block;
+				@extend %ht80;
+				width: 140upx;
+				text-align: right;
+			}
+		}
+		
+		.memberLevel{
+			display: block;
+			margin-top: 40upx;
+			text{
+				display: inline-block;
+				width: 160upx;
+				vertical-align: top;
+			}
+			.member-info{
+				display: inline-block;
+				width: calc(100% - 180upx);
+				.checkbox-item{
+					display: block;
+					margin-bottom: 20upx;
+				}
+			}
+		}
+		
+		.car-box{
+			margin-top: 40upx;
+			.car-title{
+				@extend %ht80;
+				image{
+					width: 40upx;
+					height: 40upx;
+					float: right;
+					margin-top: 20upx;
+				}
+			}
+			.card-box{
+				border: 1px solid #333;
+				@extend %border-radius;
+				
+				.add-btn{
+					@extend %ht80;
+					text-align: center;
+					color: #999;
+				}
+			}
+			.cardNo-box{
+				.cardNo{
+					@extend %ht80;
+					margin: 0 10upx;
+					padding: 0 10upx;
+					border-bottom: 1px solid #666;
+					image{
+						width: 40upx;
+						height: 40upx;
+						float: right;
+						margin-top: 20upx;
+					}
+				}
+			}
+		}
+		
+		.btn-box{
+			height: 80upx;
+			margin: 40upx 0;
+			button{
+				border: 1px solid #333;
+				@extend %border-radius;
+				width: 240upx;
+				@extend %ht80;
+			}
+			
+			button.left{
+				float: left;
+			}
+			
+			button.right{
+				float: right;
+			}
+		}
+		
+		
+		
+		
+		
+		
+	}
+}
